@@ -1,4 +1,4 @@
-# 🌫️IMAGE DEHAZING 
+# 🌫️IMAGE DEHAZING-Final Year Project
 
 ## 📖 Overview  
 Image dehazing aims to **enhance the clarity and quality of images affected by haze** using deep learning techniques. This project involves building a **React-based user interface**, a **FastAPI backend** for processing requests, and a **DehazeFormer model** for image enhancement.  

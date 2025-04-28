@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .project-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .upload-container {
+    margin: 20px;
+  }
+  
+  .upload-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-button:hover {
+    background-color: #218838;
+  }
+  
+  .image-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .image-display div {
+    text-align: center;
+  }
+  
+  .image {
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

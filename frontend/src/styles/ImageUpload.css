@@ -1,0 +1,22 @@
+.image-upload-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.image-upload-container input,
+.image-upload-container button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.result-image {
+  max-width: 500px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}

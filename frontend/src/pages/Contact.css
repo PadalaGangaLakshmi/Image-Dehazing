@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9eff6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌟 Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9eff6;
+  padding: 20px;
+}
+
+/* 📋 Contact Form */
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 320px; /* Reduced width for a more compact card */
+}
+
+/* 📬 Form Heading */
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d4ed8;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* 📝 Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f1f5f9;
+  transition: border-color 0.3s, background-color 0.3s;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1d4ed8;
+  outline: none;
+  background-color: white;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px; /* Reduced height for a smaller look */
+}
+
+/* 🚀 Button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background-color: #1646b6;
+}
+
+/* 💬 Status Message */
+.status-message {
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+/* ✅ Success Message */
+.status-message.success {
+  color: #fff;
+  background-color: #16a34a;
+}
+
+/* ❌ Error Message */
+.status-message.error {
+  color: #fff;
+  background-color: #dc2626;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

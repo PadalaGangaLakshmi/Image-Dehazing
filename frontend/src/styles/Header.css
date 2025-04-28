@@ -1,0 +1,110 @@
+/* styles/Header.css */
+
+/* Header Container */
+.header {
+  background: linear-gradient(135deg, #6a11cb, #aa8dda);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* ✨ Animated Heading */
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* ✨ Hover Effect for Heading */
+.header h1:hover {
+  transform: scale(1.05);
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Navigation List */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Items */
+nav ul li {
+  display: inline-block;
+}
+
+/* Navigation Links */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  border-radius: 8px;
+}
+
+/* Hover Effect 1: Smooth Background Glow */
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Hover Effect 2: Underline Animation */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Hover Effect 3: Neon Glow */
+nav ul li a:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  nav ul li a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+  }
+}
